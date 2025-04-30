@@ -1,0 +1,45 @@
+# Entorno virtual
+venv/
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs y archivos temporales
+*.log
+*.sqlite3
+*.db
+*.pid
+
+# IDEs y editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# pytest
+.pytest_cache/
+
+# Docker
+*.tar
+docker-compose.override.yml
+docker-compose.override.yml.backup
+
+# Mac
+.DS_Store
+
+# Coverage
+htmlcov/
+.coverage
+.coverage.*
+.nox/
+.coverage/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+
+# Pydantic
+*.schema.json
