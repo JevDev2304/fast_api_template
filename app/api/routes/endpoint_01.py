@@ -3,7 +3,7 @@ from fastapi import APIRouter , HTTPException
 from typing import List
 from app.database.models.item import Item, ItemUpdate # Assuming you have a model defined in models.py
 
-router = APIRouter(prefix="/endpoint_01", tags=["endpoint_01"])
+router = APIRouter(prefix="/", tags=["endpoint_01"])
 
 _items: List[Item] = []
 
