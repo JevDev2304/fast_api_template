@@ -1,7 +1,7 @@
 # app/routes/endpoint_02.py
 from fastapi import APIRouter
 
-router = APIRouter(prefix="/", tags=["endpoint_02"])
+router = APIRouter(prefix="/endpoint_02", tags=["endpoint_02"])
 
 # GET: Devuelve una lista mockeada de objetos genéricos
 @router.get("/")
