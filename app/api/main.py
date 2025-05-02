@@ -1,13 +1,14 @@
 
 from fastapi import FastAPI
-from app.api.routes.endpoint_01 import router as endpoint_01_router
-from app.api.routes.endpoint_02 import router as endpoint_02_router
+from app.api.routes.fibonacci_router import router as fibonacci_router
 import os
 from fastapi.responses import HTMLResponse
+from dotenv import load_dotenv
+
+load_dotenv()
 
 app = FastAPI()
-app.include_router(endpoint_01_router)
-app.include_router(endpoint_02_router)
+app.include_router(fibonacci_router)
 
 
 @app.get("/", response_class=HTMLResponse)
